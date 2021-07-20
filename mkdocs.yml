@@ -1,13 +1,30 @@
 site_name: Motlow State - Technical Operations Documentation
 nav:
-    - Home: index.md
-    - FAQ:
-        - Can IT work on my personal device?: can-it-work-on-my-personal-device.md
-    - Email:
-        - How can I disable focused inbox?: how-can-i-disable-focused-inbox.md
-        - I received an encrypted message, how do I open this?: i-received-an-encrypted-message-how-do-i-open-this.md
-theme: flatly
+  - Home: index.md
+  - FAQ:
+    - Can IT work on my personal device?: can-it-work-on-my-personal-device.md
+  - Email:
+    - How can I disable focused inbox?: how-can-i-disable-focused-inbox.md
+    - I received an encrypted message, how do I open this?: i-received-an-encrypted-message-how-do-i-open-this.md
+  - Get Help: get-help.md
+theme: 
+  name: material
+  palette:
+    - scheme: default
+      primary: green
+      accent: yellow
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: green
+      accent: yellow
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 markdown_extensions:
-    - toc
-    - admonition
-    - def_list
+  - admonition
+  - def_list
+  - toc
+extra_css:
+  - stylesheets/extra.css
